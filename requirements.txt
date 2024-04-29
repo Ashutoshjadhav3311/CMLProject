@@ -1,4 +1,4 @@
 ﻿streamlit
 requests==2.31.0
-pickle
+
 pandas 
