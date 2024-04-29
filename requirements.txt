@@ -1,4 +1,4 @@
 ﻿streamlit
 requests==2.31.0
-pickle5==0.0.11
+scikit-learn==1.4.2
 pandas==2.2.2
