@@ -5,8 +5,8 @@ import os
 import pandas as pd
 
 # Step 1: Check if the Pickle File Exists and Download if Needed
-file_name = "knnBest.pkl"
-url = "https://picklefiles3.s3.eu-west-1.amazonaws.com/knnBest.pkl"
+file_name = "knnforpickle.pkl"
+url = "https://picklefiles3.s3.eu-west-1.amazonaws.com/knnforpickle.pkl"
 
 if not os.path.exists(file_name):
     response = requests.get(url, stream=True)
