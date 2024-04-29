@@ -22,7 +22,8 @@ with open(file_name, 'rb') as file:
     model = pickle.load(file)
 
 st.write("Model loaded successfully.")
-
+st.write("Student Name=Ashutosh Jadhav")
+st.write("Student ID=X22183868")
 if "inputs" not in st.session_state:
     st.session_state.inputs = {
         "BMI": 0.0,
