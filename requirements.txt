@@ -1,4 +1,4 @@
 ﻿streamlit
 requests==2.31.0
-
-pandas 
+pickle5==0.0.12
+pandas==2.2.2
