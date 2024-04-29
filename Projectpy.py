@@ -13,9 +13,9 @@ if not os.path.exists(file_name):
     with open(file_name, 'wb') as file:
         for chunk in response.iter_content(chunk_size=8192):
             file.write(chunk)
-    st.write(f"Pickle file downloaded: {file_name}")
+    st.write(f"Pickle file downloaded: {file_name} from s3 bucket")
 else:
-    st.write(f"Pickle file '{file_name}' already exists.")
+    st.write(f"Pickle file '{file_name}' already exists no required to download from s3 bucket.")
 
 # Step 2: Load the Model
 with open(file_name, 'rb') as file:
