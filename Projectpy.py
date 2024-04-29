@@ -46,7 +46,7 @@ if "inputs" not in st.session_state:
 # Create input fields with default values from session state
 st.session_state.inputs["BMI"] = st.number_input("BMI (Body Mass Index)", value=st.session_state.inputs["BMI"])
 st.session_state.inputs["Age"] = st.number_input("Age", value=st.session_state.inputs["Age"])
-st.session_state.inputs["GenHlth"] = st.number_input("General Health (1 to 5)", value=st.session_state.inputs["GenHlth"])
+st.session_state.inputs["GenHlth"] = st.slider("General Health (1 to 5) More=bad health", min_value=1, max_value=5, value=st.session_state.inputs["GenHlth"])
 st.session_state.inputs["MentHlth"] = st.number_input("Mental Health (number of unhealthy days in the past 30)", value=st.session_state.inputs["MentHlth"])
 st.session_state.inputs["PhysHlth"] = st.number_input("Physical Health (number of unhealthy days in the past 30)", value=st.session_state.inputs["PhysHlth"])
 
