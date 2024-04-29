@@ -60,7 +60,7 @@ st.session_state.inputs["HvyAlcoholConsump"] = st.radio("Heavy Alcohol Consumpti
 st.session_state.inputs["AnyHealthcare"] = st.radio("Any Healthcare Coverage", ["No", "Yes"], index=0)
 st.session_state.inputs["Sex"] = st.radio("Sex", ["Female", "Male"], index=0)
 st.session_state.inputs["Education"] = st.slider("Education (1 to 5)", min_value=1, max_value=5, value=st.session_state.inputs["Education"])
-st.session_state.inputs["Income"] = st.number_input("Income (in dollars)", value=st.session_state.inputs["Income"])
+st.session_state.inputs["Income"] = st.number_input("Income between 1 to 7)", value=st.session_state.inputs["Income"])
 
 # Step 3: Add a Clear Button to Reset Inputs
 if st.button("Clear"):
